@@ -8,55 +8,34 @@
 
 
   <url>
-    <loc>https://angular.ganatan.com/</loc>
+    <loc>https://bienvivrebienmanger.com</loc>
     <lastmod>2023-05-08T10:13:39+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://angular.ganatan.com/about</loc>
+    <loc>https://bienvivrebienmanger.com/a-propos</loc>
     <lastmod>2023-05-08T10:13:39+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://angular.ganatan.com/contact</loc>
+    <loc>https://bienvivrebienmanger.com/offres-et-tarifs</loc>
     <lastmod>2023-05-08T10:13:39+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://angular.ganatan.com/signin</loc>
+    <loc>https://bienvivrebienmanger.com/contact</loc>
     <lastmod>2023-05-08T10:13:39+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://angular.ganatan.com/bootstrap-prototype</loc>
+    <loc>https://bienvivrebienmanger.com/cgdv</loc>
     <lastmod>2023-05-08T10:13:39+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://angular.ganatan.com/reactive-form</loc>
+    <loc>https://bienvivrebienmanger.com/mentions-legales</loc>
     <lastmod>2023-05-08T10:13:39+00:00</lastmod>
     <priority>0.80</priority>
   </url>
-  <url>
-    <loc>https://angular.ganatan.com/pagination</loc>
-    <lastmod>2023-05-08T10:13:39+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://angular.ganatan.com/httpclient</loc>
-    <lastmod>2023-05-08T10:13:39+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://angular.ganatan.com/contact/mailing</loc>
-    <lastmod>2023-05-08T10:13:39+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://angular.ganatan.com/contact/map</loc>
-    <lastmod>2023-05-08T10:13:39+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-
 
 </urlset>

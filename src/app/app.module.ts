@@ -17,6 +17,7 @@ import { CookieService } from 'ngx-cookie-service';
 import { RecaptchaFormsModule, RecaptchaModule } from 'ng-recaptcha';
 import { GoUpButtonComponent } from './Components/Shared/go-up-button/go-up-button.component';
 import { CgdvComponent } from './Components/cgdv/cgdv.component';
+import { MentionLegaleComponent } from './Components/mention-legale/mention-legale.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { CgdvComponent } from './Components/cgdv/cgdv.component';
     HomeComponent,
     OffersOfferComponent,
     GoUpButtonComponent,
-    CgdvComponent
+    CgdvComponent,
+    MentionLegaleComponent
   ],
   imports: [
     BrowserModule,

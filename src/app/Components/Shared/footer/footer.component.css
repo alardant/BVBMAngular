@@ -47,3 +47,15 @@ a {
   height: 20px;
   margin-bottom: 1rem
 }
+
+.cgdv-ml
+ {
+    display:flex !important;
+    padding:unset;
+    justify-content:center;
+}
+
+.cgdv-ml a{
+    padding-top: unset;
+    padding-bottom:unset;
+}

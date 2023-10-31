@@ -24,12 +24,6 @@
           <li class="nav-item">
             <a class="nav-link" routerLink="/contact"><p>Contact</p></a>
           </li>
-          <li class="nav-item ifLoggedIn" *ngIf="isLoggedIn">
-            <a class="nav-link" routerLink="/reviews"><p>Commentaires</p></a>
-          </li>
-          <li class="nav-item ifLoggedIn" *ngIf="isLoggedIn">
-            <a class="nav-link" (click)="Logout()"><p>Déconnexion</p></a>
-          </li>
         </ul>
       </div>
     </div>

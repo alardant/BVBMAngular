@@ -3,6 +3,7 @@ import { Contact } from '../../Models/contact';
 import { ContactService } from '../../Services/Contact/contact.service';
 import { ViewportScroller } from '@angular/common';
 import { Meta, Title } from '@angular/platform-browser';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -23,7 +24,7 @@ export class ContactComponent implements OnInit {
   captchaError: string = '';
   isCaptchaResolved: boolean = false;
 
-  constructor(private contactService: ContactService, private viewportScroller: ViewportScroller, private titleService: Title, private meta: Meta) { }
+  constructor(private formBuilder: FormBuilder, private contactService: ContactService, private viewportScroller: ViewportScroller, private titleService: Title, private meta: Meta) { }
 
   ngOnInit() {
     this.titleService.setTitle('Bien Vivre Bien Manger | Contactez-moi');
@@ -31,8 +32,6 @@ export class ContactComponent implements OnInit {
   }
 
   sendContactForm() {
-    console.log(this.isCaptchaResolved);
-
     // Réinitialise les messages d'erreur avant chaque soumission
     this.nameError = '';
     this.emailError = '';
@@ -63,22 +62,17 @@ export class ContactComponent implements OnInit {
     // Vérifie s'il y a des erreurs avant de soumettre le formulaire
     if (!this.nameError && !this.emailError && !this.phoneError && !this.subjectError && !this.messageError && this.isCaptchaResolved == true) {
       // Soumets le formulaire
-      
-      this.contactService.SendContactForm(this.contact).subscribe(
-        (result: string) => {
-          console.log(result);
-          this.responseMessage = 'success';
-          this.contact = new Contact();
-          this.viewportScroller.scrollToPosition([0, 0]);
 
-        },
-        (error) => {
-          console.log(error);
-
-          this.responseMessage = 'fail';
-          this.viewportScroller.scrollToPosition([0, 0]);
-        }
-      );
+      try {
+        this.contactService.SendContactForm(this.contact)
+        this.responseMessage = 'success';
+        this.contact = new Contact();
+        this.viewportScroller.scrollToPosition([0, 0]);
+      }
+      catch (error) {
+        this.responseMessage = 'fail';
+        this.viewportScroller.scrollToPosition([0, 0]);
+      }
     }
   }
 

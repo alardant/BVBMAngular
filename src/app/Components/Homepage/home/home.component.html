@@ -71,9 +71,31 @@ Disponible uniquement sur Toulouse et ses proches alentours.
       <h2>Témoignages </h2>
     <div id="review-carousel" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item" *ngFor="let review of reviews; let i = index" [ngClass]="{active: i === 0}">
-          <q>{{review.description}}</q>
-          <p>{{review.name}}, {{getPackageName(review.package)}}</p>
+        <div class="carousel-item active">
+          <q>Mélanie m'a suivi durant les 3 derniers mois. Des conseils au top et un suivi Whatsapp super pratique, surtout quand je fais les courses !<br /> Je recommande les yeux fermés.</q>
+          <p>Antoine, Pack 3 mois</p>
+        </div>
+        <div class="carousel-item">
+          <q>
+            J'ai eu la chance de bénéficier d'une séance d'accompagnement en visio suivi d'une séance chez moi, face à mes placards. Mélanie a su m'apporter des informations qui me sont déjà bénéfiques (au niveau de ma forme et de ma santé). Son approche est professionnelle et très bienveillante, ce pourquoi je recommande entièrement ses services !
+            <br />La première séance en visio m'a réellement permis de me poser des questions sur mon alimentation actuelle, de prendre du recul. Mélanie a su m'apporter des informations sur les besoins nutritionnels, la santé, sans oublier le goût, tout en s'adaptant à mes contraintes du quotidien (mes goûts personnels, mes intolérances, mes contraintes de temps de travail,...). Manger végétal est devenu beaucoup moins impressionnant ! Le livret e-book est aussi un vrai plus. Accompagné des notes de ma séance qu'elle m'a envoyé, ces supports écrits me permettent de garder en mémoire ses bons conseils et m'aident à rester motivée au quotidien.
+            <br />La séance à domicile, quelques semaines après, m'a également permis de faire le point sur ce que j'ai pu déjà mettre en place, réévaluer mes besoins et les adapter à mes habitudes, avec l'aide bienveillante de Mélanie.
+          </q>
+          <p>Angèle, Consultation à domicile</p>
+        </div>
+        <div class="carousel-item">
+          <q>
+            Melanie à été une aide clef dans ma transition vers une alimentation plus végétale. Son expérience et ses conseils avisés m'ont permis de reprendre de bonnes habitudes alimentaires pour ma santé tout en respectant mes valeurs liées à l'environnement.
+            <br />J''ai également pu remplacer des aliments non végétales par des alternatives végétales facilement grâce aux astuces de Mélanie. Vous pouvez y aller les yeux fermés.
+          </q>
+          <p>Nathalie, Consultation individuelle</p>
+        </div>
+        <div class="carousel-item">
+          <q>
+            Melanie à été une aide clef dans ma transition vers une alimentation plus végétale. Son expérience et ses conseils avisés m'ont permis de reprendre de bonnes habitudes alimentaires pour ma santé tout en respectant mes valeurs liées à l'environnement.
+            <br />J'ai également pu remplacer des aliments non végétales par des alternatives végétales facilement grâce aux astuces de Mélanie. Vous pouvez y aller les yeux fermés.
+          </q>
+          <p>Nathalie, Consultation individuelle</p>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#review-carousel" data-bs-slide="prev">
           <span class="bi bi-arrow-left" aria-hidden="true"></span>

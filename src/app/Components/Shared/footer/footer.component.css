@@ -1,0 +1,49 @@
+footer {
+  text-align: center;
+  margin-top:2rem;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  align-items: center;
+  position: relative;
+  z-index: 1
+}
+    
+  .container-fluid .bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('~/src/assets/images/footer.jpg');
+    opacity: .4;
+    background-size: cover;
+    background-position: center;
+  }
+
+@media (max-width: 575px) {
+    .container-fluid{
+        flex-direction:column;
+    }
+}
+
+.navbar-toggler:focus{
+    box-shadow:unset;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer-open-hours p:first-of-type{
+    text-decoration:underline;
+}
+
+.logo-insta {
+  height: 20px;
+  margin-bottom: 1rem
+}

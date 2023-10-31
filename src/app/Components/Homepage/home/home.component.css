@@ -1,0 +1,135 @@
+.container {
+  text-align: center;
+}
+
+.quote {
+  padding: 2rem;
+}
+
+  .quote * {
+    padding: unset;
+    font-size: 18px;
+  }
+
+  .quote > h2 {
+    padding-bottom: 1rem;
+  }
+
+.mission-container {
+  background-color: #F8F1E4;
+}
+
+.mission {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  .mission p {
+    width: 80%;
+  }
+
+  .mission h2 {
+    padding-bottom: 1rem;
+  }
+
+  .mission p:last-of-type {
+    padding-bottom: 2rem;
+  }
+
+.offers-container {
+  text-align: center;
+}
+
+  .offers-container h2 {
+    font-weight: 400;
+  }
+
+.free-call {
+  border: 2px solid #ECEBBD;
+  border-radius: 30px;
+  margin-bottom: 2rem;
+}
+
+  .free-call p:first-of-type {
+    font-size: 18px;
+    padding: 1rem;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+
+  .free-call p:last-of-type {
+    padding-bottom: unset;
+  }
+
+  .free-call h3 {
+    font-weight: bold;
+  }
+
+.offers-card-container {
+  display: grid;
+  align-items: stretch !important;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4%;
+}
+
+.google-reviews {
+  text-decoration: underline;
+  position: absolute;
+  right: 5%;
+  bottom: 1rem;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.google-reviews img{
+    height:5rem;
+}
+
+@media (max-width: 767px) {
+  .offers-card-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.reviews-container {
+  background-color: #F8F1E4;
+  text-align: center;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.carousel p {
+  margin-top: 1rem;
+}
+
+.bi-arrow-left, .bi-arrow-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  font-size: 3em;
+  color: #444444;
+  height: 30px;
+  background-color: #F8F1E4;
+  border-radius: 50px;
+  opacity: 0.8;
+}
+
+  .see-all-reviews:hover {
+    transform: scale(1.03);
+  }
+
+button {
+  box-shadow: unset;
+}
+
+.reviews-container q {
+  margin-left: 12%;
+  padding-right: 12%;
+  display: block;
+  text-align: center;
+}

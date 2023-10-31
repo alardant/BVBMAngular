@@ -1,1 +1,95 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: AbrilFataface;
+  src: url(assets/font/AbrilFatface-Regular.otf) format("opentype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  position:relative;
+  height:100%;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #444444;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column !important;
+  min-height: 100%;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "AbrilFataface", sans-serif;
+  padding: 2rem;
+  margin-bottom: unset;
+}
+
+h1{
+    font-size:50px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+a {
+  color: #444444!important;
+}
+
+a:hover{
+    cursor:pointer;
+}
+
+p {
+    margin:unset;
+    padding-bottom:1rem;
+}
+
+q {
+    font-style:italic;
+}
+
+.container {
+  min-width: 95% !important;
+}
+
+.info-message {
+  color: #e10000;
+  margin-top: 1rem;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.error-message {
+  color: #e10000;
+}
+
+input:focus, select:focus, textarea:focus {
+  box-shadow: 0 0 0 0.25rem rgb(236, 235, 189) !important;
+  border-color: rgb(236, 235, 189) !important;
+  background-color: inherit;
+}
+
+button {
+  border-radius: 30px;
+  padding: 0.5rem;
+  background-color: inherit;
+  border: 1px solid #444444;
+  box-shadow: 0px 1px 2px #444444;
+}

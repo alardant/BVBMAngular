@@ -1,0 +1,95 @@
+<section class="quote container">
+  <q>Que ton alimentation soit ta première médecine</q>
+  <p>Hippocrate</p>
+</section>
+
+<div class="mission-container">
+  <div class="mission container">
+    <h2>La mission de Bien Vivre Bien manger</h2>
+    <p>
+      J’ai à cœur de promouvoir et de faciliter l’accès à une alimentation végétale équilibrée.<br />
+      Je suis là pour vous accompagner lors de consultations, en vous aidant dans votre transition vers une alimentation plus végétale, quel que soit votre modèle alimentaire actuel.
+    </p>
+    <p>
+      Je vous propose des conseils personnalisés, des solutions pratiques et des ressources pour une alimentation saine et durable, tout en préservant le bien-être des individus, des animaux et de la planète.
+    </p>
+  </div>
+</div>
+
+<section class="offers-container container">
+  <h2>Ce que je vous propose</h2>
+  <div class="free-call">
+    <p>Appel découverte GRATUIT de 15 minutes :</p>
+    <p>Pendant cet échange, nous aurons l’occasion de discuter de vos besoins, objectifs et préocupations. Je me ferai un plaisir de vous orienter vers l’offre qui vous correspond au mieux.</p>
+    <p>Peu importe votre modèle alimentaire actuel, flexitarien, végétarien, végétalien, cet appel découverte vous donnera un aperçu de la manière dont je pourrai vous accompagner.</p>
+    <p>Ne laissez pas vos questions en suspens, réservez dès maintenant votre appel découverte gratuit.</p>
+  <app-button (btnClick)="redirectToContact()" text="Me Contacter"></app-button>
+  </div>
+
+
+  <div class="offers-card-container">
+
+      <app-home-offer imageUrl="./assets/images/offer1.jpg"
+                      imageAlt="Image de la consultation individuelle"
+                      title="Consultation sur Mesure"
+                      description="Grâce à une approche personnalisée, je vous donnerai tous les conseils et ressources dont vous avez besoin.
+
+      Que ce soit pour avoir une alimentation riche en nutriments essentiels, pour prévenir des carences ou remplacer facilement certains aliments dans vos assiettes, tout en respectant votre style de vie, pour faire le plein d’énergie au quotidien !"
+                      backgroundColor="#ECEBBD">
+      </app-home-offer>
+      <app-home-offer imageUrl="./assets/images/offer2.jpg"
+                      imageAlt="Image du pack 3 mois"
+                      title="Pack  3 mois"
+                      description="Ce pack est spécialement conçu pour vous accompagner tout au long de votre parcours vers une alimentation plus végétale.
+
+      Chaque mois, vous bénéficierez d’une consultation sur mesure. Elles vous permettront de discuter de vos besoins, de vos contraintes, doutes et progrès, ainsi que de recevoir des recommandations personnalisées.
+
+      Je serai là à tout moment grâce au service de suivi Whatsapp. Vous pourrez me poser des questions, partager vos préocupations, vos succès et recevoir des réponses rapides et personnalisées, par messages et notes vocales pour vous offrir la flexibilité dont vous avez besoin."
+                      backgroundColor="#F7CC84">
+      </app-home-offer>
+
+      <app-home-offer imageUrl="./assets/images/offer3.jpg"
+                      imageAlt="Image de la consultation à domicile"
+                      title="Consultation à domicile"
+                      description="Durant cette consultation, je me rends directement chez vous. Nous échangerons sur vos besoins et vos interrogations.
+
+      Après avoir regardé le contenu de vos placards, nous nous rendrons dans votre magasin favori.
+
+      Je vous indiquerai alors quelles alternatives s’offrent à vous en fonction de ce que vous souhaitez supprimer et/ou remplacer. Je vous montrerai également les indispensables pour une alimentation végétale riche et équilibrée.
+
+Disponible uniquement sur Toulouse et ses proches alentours.
+                      "
+                      backgroundColor="#F8F1E4">
+      </app-home-offer>
+    
+  </div>
+  <app-button (btnClick)="redirectToOffers()" text="En savoir +"></app-button>         
+</section>
+
+<section class="reviews-container">
+  <div class="container">
+      <h2>Témoignages </h2>
+    <div id="review-carousel" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item" *ngFor="let review of reviews; let i = index" [ngClass]="{active: i === 0}">
+          <q>{{review.description}}</q>
+          <p>{{review.name}}, {{getPackageName(review.package)}}</p>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#review-carousel" data-bs-slide="prev">
+          <span class="bi bi-arrow-left" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#review-carousel" data-bs-slide="next">
+          <span class="bi bi-arrow-right" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <app-button (btnClick)="createReview('https://www.google.com/search?client=ms-android-oppo-rvo3&sca_esv=571565668&sxsrf=AM9HkKmzb4tjBoT2E2lV9K7w5cRwTe-45g:1696686062193&q=Bien+vivre+bien+manger&ludocid=9464772484834966407&lsig=AB86z5UOPNVxSiQ3NNl5ikJMMEeD&kgs=fbdc38646f7bc47c&shndl=-1&shem=lbsc,lsp&source=sh/x/kp/local/m1/2#lrd=0x12aebdb82eacadc9:0x8359a06dae7abb87,3,,,,')" backgroundColor="#ffffff" text="Laisser votre avis ici"></app-button>
+    <div class="google-reviews">
+      <img src="./assets/images/google-review.png" alt="photo google review" />
+      <a class="see-all-reviews" href="https://www.google.com/search?client=ms-android-oppo-rvo3&sca_esv=571565668&sxsrf=AM9HkKmzb4tjBoT2E2lV9K7w5cRwTe-45g:1696686062193&q=Bien+vivre+bien+manger&ludocid=9464772484834966407&lsig=AB86z5UOPNVxSiQ3NNl5ikJMMEeD&kgs=fbdc38646f7bc47c&shndl=-1&shem=lbsc,lsp&source=sh/x/kp/local/m1/2#lrd=0x12aebdb82eacadc9:0x8359a06dae7abb87,1,,,," target="_blank">Voir tous les avis ici</a>
+    </div>
+  </div>
+</section>
+

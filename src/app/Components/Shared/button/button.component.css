@@ -1,0 +1,15 @@
+.btn {
+  border: 1px solid #444444;
+  border-radius:30px;
+  padding:1rem 2rem;
+  margin: 2rem 0;
+}
+
+.btn {
+  box-shadow: 0px 2px 4px #444444;
+}
+
+  .btn:hover {
+    transform: scale(1.03);
+    transition: 0.3s ease-in-out;
+  }

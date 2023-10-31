@@ -1,0 +1,2 @@
+C:\Users\Antoine\source\repos\BVBM\BVBMWebsite\obj\Debug\BVBMWebsite.esproj.SuggestedBindingRedirects.cache
+C:\Users\Antoine\source\repos\BVBM\BVBMWebsite\obj\Debug\BVBMWebsite.esproj.CoreCompileInputs.cache

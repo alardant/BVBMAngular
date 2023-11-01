@@ -133,3 +133,7 @@ button {
   display: block;
   text-align: center;
 }
+
+.reviews-container p {
+    text-decoration:underline;
+}

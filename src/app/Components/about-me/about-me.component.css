@@ -25,6 +25,12 @@ h2 {
   padding-bottom: 1rem;
 }
 
+@media (min-width: 995px) {
+  h2 {
+    padding-bottom: 2rem;
+  }
+}
+
 @media (max-width: 767px){
   .about-me {
     display:block;

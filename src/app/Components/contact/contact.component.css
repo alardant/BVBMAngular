@@ -70,6 +70,19 @@ input:focus, textarea:focus {
   gap: 20%;
 }
 
+@media (max-width:575px) {
+  .send-div {
+    grid-template-columns: 1fr;
+    gap: 0%;
+  }
+
+  .send-div .form-group{
+      margin-bottom:0;
+  }
+}
+
+
+
 .send-div p{
     text-align:center
 }

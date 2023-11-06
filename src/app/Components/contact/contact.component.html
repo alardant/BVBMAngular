@@ -30,7 +30,7 @@
       </div>
       <div class="phone-email-div">
         <div class="form-group">
-          <label for="email">Email</label>
+          <label for="email">E-mail</label>
           <input type="email" id="email" name="email" class="form-control" [(ngModel)]="contact.email" required (input)="emailError = ''">
           <div class="error-message" *ngIf="emailError">{{ emailError }}</div>
         </div>

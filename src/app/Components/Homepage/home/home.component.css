@@ -84,6 +84,15 @@
   gap: 5px;
 }
 
+@media (max-width: 575px) {
+  .google-reviews {
+    position: unset;
+    width:fit-content;
+    float:right;
+  }
+}
+
+
 .google-reviews img{
     height:5rem;
 }

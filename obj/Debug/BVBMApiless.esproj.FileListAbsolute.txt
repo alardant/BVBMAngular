@@ -1,0 +1,2 @@
+C:\Users\Antoine\source\repos\BVBMApiless\BVBMApiless\obj\Debug\BVBMApiless.esproj.SuggestedBindingRedirects.cache
+C:\Users\Antoine\source\repos\BVBMApiless\BVBMApiless\obj\Debug\BVBMApiless.esproj.CoreCompileInputs.cache
